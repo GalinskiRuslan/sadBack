@@ -6,7 +6,7 @@ const auth = require("./routers/authRouter");
 const regims = require("./routers/regimRouter");
 
 app.use(express.json());
-app.use(corse({ credentials: true, origin: "http://localhost:3000" }));
+app.use(corse({ credentials: true, origin: "http://78.40.108.96:3000" }));
 app.use("/", auth, regims);
 
 const serverStart = () => {
